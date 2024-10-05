@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">TBApp</string>
+    <string name="long_description">Located on the southwestern coast of Sri Lanka, is a UNESCO World Heritage site and a vibrant cultural and historical landmark. Built initially by the Portuguese in the 16th century and later fortified by the Dutch in the 17th century, Galle.... Read More</string>
+    <string name="title_activity_schedule">Schedule</string>
+    <string name="title_activity_details">Details</string>
+    <string name="title_other_activity">Other Activity</string>
+
 </resources>

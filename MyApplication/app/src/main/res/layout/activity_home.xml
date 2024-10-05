@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF">
+
+    <!-- User Profile and Notification Icon -->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageViewUser"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_user_profile"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/CircleShape"/>
+        <!-- Replace with your user profile drawable -->
+
+
+        <TextView
+            android:id="@+id/textViewUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_toEndOf="@id/imageViewUser"
+            android:text="Roshan"
+            android:textColor="#000000"
+            android:textSize="23dp" />
+
+    </RelativeLayout>
+
+    <!-- Title Text -->
+
+    <!-- Best Destination Section -->
+
+    <!-- Horizontal Scroll View for Destinations -->
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_marginTop="46dp"
+        android:padding="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Explore the Beauty of Sri Lanka!"
+        android:textColor="#000000"
+        android:textSize="40sp" />
+
+    <LinearLayout
+        android:id="@+id/destinationHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewBestDestination"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Best Destination"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonViewAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0D6EFD"
+            android:text="View all" />
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/scrollViewDestinations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/destinationHeader"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/destinationContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Sample Destination Layout, Repeat as Needed -->
+            <ImageView
+                android:id="@+id/bestDestination"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/onboard_image2"/>  <!-- Replace with actual images -->
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/onboard_image" /> <!-- Replace with actual images -->
+
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/onboard_image" /> <!-- Replace with actual images -->
+
+
+
+            <!-- Additional destinations can be added here -->
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Bottom Navigation Bar -->
+    <!-- Bottom Navigation Bar -->
+    <!-- Bottom Navigation Bar -->
+    <LinearLayout
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary">
+
+        <!-- Home ImageButton -->
+        <ImageButton
+            android:id="@+id/buttonHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFF"
+            android:src="@drawable/ic_home" /> <!-- Replace with your actual home icon drawable -->
+
+        <!-- Calendar ImageButton -->
+        <ImageButton
+            android:id="@+id/buttonCalendar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFF"
+            android:src="@drawable/ic_calendar" /> <!-- Replace with your actual calendar icon drawable -->
+
+        <!-- Search ImageButton -->
+        <ImageButton
+            android:id="@+id/buttonSearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#0D6EFD"
+            android:src="@drawable/ic_search"/>  <!-- Replace with your actual search icon drawable -->
+
+        <!-- Messages ImageButton -->
+        <ImageButton
+            android:id="@+id/buttonMessages"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFF"
+            android:src="@drawable/ic_messages"/>  <!-- Replace with your actual messages icon drawable -->
+
+        <!-- Profile ImageButton -->
+        <ImageButton
+            android:id="@+id/buttonProfile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFF"
+            android:src="@drawable/ic_profile" />
+    </LinearLayout>
+
+
+</RelativeLayout>

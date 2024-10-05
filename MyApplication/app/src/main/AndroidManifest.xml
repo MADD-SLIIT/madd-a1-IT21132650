@@ -10,17 +10,48 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MyApplication"
+        android:theme="@style/Theme.TBApp"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".SplashActivity"
+            android:exported="true">  <!-- This line needs to be added -->
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".OnboardActivity"
+            android:exported="false">  <!-- No intent filters are needed unless externally accessible -->
+        </activity>
+
+        <activity
+            android:name=".Onboard2Activity"
+            android:exported="false">  <!-- No intent filters are needed unless externally accessible -->
+        </activity>
+
+        <activity
+            android:name=".Onboard3Activity"
+            android:exported="false">  <!-- No intent filters are needed unless externally accessible -->
+        </activity>
+
+        <activity android:name=".SignInActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".HomeActivity">
+            <!-- Other attributes or intent filters if needed -->
+        </activity>
+        <activity android:name=".DetailsActivity" />
+        <activity android:name=".ScheduleActivity"
+            android:label="@string/title_activity_schedule">
+            <!-- Additional attributes can be added here if necessary -->
+        </activity>
+
+
+
+
+
+
     </application>
 
 </manifest>

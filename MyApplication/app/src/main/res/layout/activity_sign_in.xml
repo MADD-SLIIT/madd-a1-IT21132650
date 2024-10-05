@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/textViewSignInHeader"
+        android:layout_width="142dp"
+        android:layout_height="34dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="116dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="140dp"
+        android:text="Sign in now"
+        android:textSize="25sp"
+        android:textColor="#1B1E28"
+        android:lineSpacingExtra="-30sp"
+        android:gravity="center_horizontal|top"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:id="@+id/please_sign"
+        android:layout_width="256dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="59dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="186dp"
+        android:text="Please sign in to continue"
+        android:lineSpacingExtra="-19sp"
+        android:gravity="center_horizontal|top"
+        />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSignInHeader"
+        android:layout_marginTop="150dp"
+        android:hint="Email"
+        android:textColor="#00000F"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginTop="16dp"
+        android:hint="Password"
+        android:textColor="#00000F"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:id="@+id/textViewForgetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPassword"
+        android:layout_marginTop="8dp"
+        android:text="Forget Password?"
+        android:textSize="12sp"
+        android:textColor="#0000FF"
+        android:layout_alignParentEnd="true"/>
+
+    <Button
+        android:id="@+id/buttonSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPassword"
+        android:layout_marginTop="24dp"
+        android:text="Sign In"
+        android:backgroundTint="#4F6BED"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/textSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSignIn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Don't have an account? Sign up"
+        android:textColor="#0000FF"/>
+
+    <ImageView
+        android:id="@+id/imageViewGoogle"
+        android:layout_width="30dp"
+        android:layout_height="42dp"
+        android:layout_below="@id/textSignUp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_google" /> <!-- Ensure you have this drawable resource -->
+
+</RelativeLayout>

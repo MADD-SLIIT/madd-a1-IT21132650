@@ -1,0 +1,76 @@
+<!-- item_popular_place.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@drawable/card_background"
+    android:elevation="4dp"
+    android:layout_margin="8dp">
+
+    <!-- Image -->
+    <ImageView
+        android:id="@+id/placeImage"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sample_image" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/placeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Galle Fort Hotel"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp" />
+
+    <!-- Location -->
+    <TextView
+        android:id="@+id/placeLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="28 Church St, Galle"
+        android:textSize="14sp"
+        android:textColor="#888888"
+        android:layout_marginTop="4dp" />
+
+    <!-- Rating and Price Layout -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <!-- Rating -->
+        <TextView
+            android:id="@+id/placeRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="★ 4.7"
+            android:textSize="14sp"
+            android:textColor="#FFAA00" />
+
+        <!-- Price -->
+        <TextView
+            android:id="@+id/placePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$459/Person"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+    <!-- Heart Icon -->
+    <ImageView
+        android:id="@+id/favoriteIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_favorite"
+        android:contentDescription="Favorite Icon"
+        android:layout_gravity="end"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

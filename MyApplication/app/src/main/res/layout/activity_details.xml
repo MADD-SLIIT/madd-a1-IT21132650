@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/textViewSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginTop="127dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="About Destination"
+        android:textSize="20sp" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageViewHeader"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/onboard_image2"
+        app:shapeAppearanceOverlay="@style/RoundedImageView"/>
+
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewHeader"
+        android:text="Galle Fort"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-medium"
+        android:padding="16dp" />
+
+    <TextView
+        android:id="@+id/textViewSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:text="Southern Province"
+        android:textSize="16sp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp" />
+
+    <View
+        android:id="@+id/rectangle_8"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="374dp"
+        android:background="@drawable/place_1" />
+
+    <View
+        android:id="@+id/rectangle_8"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="322dp"
+        android:layout_marginTop="374dp"
+        android:background="@drawable/place_2" />
+
+    <View
+        android:id="@+id/rectangle_8"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="254dp"
+        android:layout_marginTop="374dp"
+        android:background="@drawable/place_3" />
+
+    <View
+        android:id="@+id/rectangle_8"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="186dp"
+        android:layout_marginTop="374dp"
+        android:background="@drawable/place_4" />
+
+    <View
+        android:id="@+id/rectangle_8"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="118dp"
+        android:layout_marginTop="374dp"
+        android:background="@drawable/place_5" />
+
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSubtitle"
+        android:layout_marginTop="144dp"
+        android:padding="16dp"
+        android:lineSpacingExtra="10sp"
+
+        android:text="@string/long_description" />
+
+    <Button
+        android:id="@+id/buttonVisitNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDescription"
+        android:layout_margin="16dp"
+        android:layout_marginTop="129dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#0D6EFD"
+        android:text="Visit Now"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary">
+
+        <!-- Home ImageButton -->
+        <ImageButton
+            android:id="@+id/buttonHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFF"
+            android:src="@drawable/ic_home" /> <!-- Replace with your actual home icon drawable -->
+
+        <!-- Calendar ImageButton -->
+        <ImageButton
+            android:id="@+id/buttonCalendar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFF"
+            android:src="@drawable/ic_calendar" /> <!-- Replace with your actual calendar icon drawable -->
+
+        <!-- Search ImageButton -->
+        <ImageButton
+            android:id="@+id/buttonSearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#0D6EFD"
+            android:src="@drawable/ic_search"/>  <!-- Replace with your actual search icon drawable -->
+
+        <!-- Messages ImageButton -->
+        <ImageButton
+            android:id="@+id/buttonMessages"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFF"
+            android:src="@drawable/ic_messages"/>  <!-- Replace with your actual messages icon drawable -->
+
+        <!-- Profile ImageButton -->
+        <ImageButton
+            android:id="@+id/buttonProfile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFF"
+            android:src="@drawable/ic_profile" />
+    </LinearLayout>
+
+</RelativeLayout>
